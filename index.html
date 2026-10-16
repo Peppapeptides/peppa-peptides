@@ -1144,17 +1144,14 @@
         `;
       }).join("");
     }
+function showCheckoutNotice() {
+  window.location.href = "https://www.paypal.com/ncp/payment/57BG6WBEJLLQJ";
+}
 
-    function showCheckoutNotice() {
-      document.getElementById("checkout-message").textContent =
-        "Checkout is not set up yet. This website does not accept payments or submit orders.";
-    }
+document.getElementById("current-year").textContent =
+  new Date().getFullYear();
 
-    document.getElementById("current-year").textContent =
-      new Date().getFullYear();
-
-    renderCart();
-  </script>
+renderCart();
+</script>
 </body>
 </html>
-  
